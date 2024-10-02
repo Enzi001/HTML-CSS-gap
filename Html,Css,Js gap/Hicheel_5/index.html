@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"],
+        input[type="search"],
+        input[type="color"],
+        input[type="time"],
+        input[type="month"],
+        input[type="range"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="button"],
+        input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="button"]:hover,
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .volume-control {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .volume-control label {
+            margin-right: 15px;
+        }
+        .radio-group {
+            margin-top: 15px;
+        }
+        .radio-group label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Хэрэглэгчийн Форм</h1>
+
+        <label for="name">Нэр:</label>
+        <input type="text" id="name">
+
+        <label for="email">И-мэйл:</label>
+        <input type="email" id="email">
+
+        <label for="password">Нууц үг:</label>
+        <input type="password" id="password">
+
+        <label for="file">Файл оруулах:</label>
+        <input type="file" id="file">
+
+        <label for="agree">Нөхцлийг зөвшөөрч байна:</label>
+        <input type="checkbox" id="agree">
+
+        <input type="button" value="Товч">
+
+        <div class="volume-control">
+            <label for="volume">Дууны түвшин:</label>
+            <input type="range" min="0" max="100" name="volume" step="10">
+        </div>
+
+        <h1>Насаа оруулна уу</h1>
+        <div class="radio-group">
+            <input type="radio" id="age1" name="age">
+            <label for="age1">0-30</label>
+            
+            <input type="radio" id="age2" name="age">
+            <label for="age2">30-40</label>
+            
+            <input type="radio" id="age3" name="age">
+            <label for="age3">40-60</label>
+        </div>
+
+        <input type="submit" value="Илгээх">
+
+        <label for="birthday">Төрсөн өдөр:</label>
+        <input type="date" id="birthday">
+
+        <input type="submit" value="Илгээх">
+
+        <label for="month">Сар:</label>
+        <input type="month">
+
+        <label for="search">Хайлт:</label>
+        <input type="search" id="search">
+
+        <label for="color">Өнгө сонгох:</label>
+        <input type="color" id="color">
+
+        <label for="time">Цаг сонгох:</label>
+        <input type="time" id="time">
+
+    </div>
+
+</body>
+</html>

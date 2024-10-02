@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main .texts .text_1 .text_in_2 {
+  color: green;
+}
+#main .texts .text_2 .text_2_1 {
+  color: orange;
+}
+#main .texts .text_2_in_1 .text_2_in_2_1 {
+  color: pink;
+}
+#main .texts .text_2_in_1 .text_2_in_2_2 {
+  color: gray;
+}
+#main .texts .text_2_in_1 .text_2_in_2_3 {
+  color: purple;
+}
+#main .texts .text_2_in_1 .text_2_in_2_4 {
+  color: green;
+}
