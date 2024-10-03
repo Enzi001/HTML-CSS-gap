@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+}
+.container .item {
+  background-color: skyblue;
+  margin: 10px;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.container span .item {
+  background-color: aqua;
+  font-size: 40px;
+  transition: all 0.8s;
+  visibility: hidden;
+  opacity: 0;
+}
+.container span .item:hover {
+  background-color: red;
+  color: white;
+  transition: all 0.8s ease-in-out;
+}
+.container .item:hover {
+  background-color: blueviolet;
+}
+.container .hello:hover + .item_1 .item {
+  visibility: visible;
+  opacity: 1;
+  color: rgb(255, 136, 0);
+  font-family: monospace;
+}
+
+.item_item_1 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+
+.container .item_item_1:active {
+  background-color: pink;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+a i {
+  font-size: 45px;
+  text-align: center;
+}
+
+a i:active{
+    background-color: orange;
+}
+.box{
+    width: 700px;
+    height: 500px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 30px;
+    word-spacing: 10px;
+    text-shadow: 20px 20px 3px red;
+    font-family: monospace, serif;
+}
